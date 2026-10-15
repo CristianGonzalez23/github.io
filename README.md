@@ -1,51 +1,37 @@
-# Landing personal · Cristian Ricardo González Ibarra
+# Landing Page Personal · Cristian Ricardo González Ibarra
 
-Sitio estático (HTML + CSS, sin dependencias ni build) listo para publicar en **GitHub Pages**.
+¡Hola! Bienvenido al repositorio de mi página web personal y portafolio profesional. 
 
-```
+Este proyecto fue desarrollado para presentar mi perfil, detallar mi experiencia laboral, mostrar mi formación académica y destacar mis habilidades técnicas de una manera rápida, accesible y visualmente atractiva.
+
+🔗 **Visita mi sitio en vivo:** [https://cristiangonzalez23.github.io](https://cristiangonzalez23.github.io)
+
+*(Nota: si no cambiaste el nombre del repositorio, el enlace arriba debería ser `https://cristiangonzalez23.github.io/github.io`)*
+
+## 🚀 Sobre el Proyecto
+
+Este sitio es una página estática, rápida y ligera, desarrollada desde cero sin depender de frameworks externos complejos. Esto garantiza un excelente rendimiento y tiempos de carga mínimos. Además, cuenta con un diseño adaptable (Responsive Design) para verse bien en cualquier dispositivo móvil o de escritorio, e incluye soporte para **modo claro y oscuro** automático según las preferencias de tu sistema.
+
+### Secciones principales:
+- **Sobre mí:** Un breve resumen de mi perfil y objetivos profesionales.
+- **Experiencia y Formación:** Mi trayectoria laboral y estudios académicos.
+- **Habilidades:** Tecnologías, lenguajes y herramientas que manejo.
+- **Contacto:** Enlaces directos a mis redes profesionales y medios para contactarme.
+
+## 🛠️ Tecnologías Utilizadas
+
+- **HTML5:** Estructura semántica de la página.
+- **CSS3:** Estilos personalizados, diseño responsivo, y variables CSS para el manejo de colores de marca.
+- **GitHub Pages:** Alojamiento y despliegue continuo de la web.
+
+## 📂 Estructura del Proyecto
+
+El código está organizado de la siguiente manera para mantener su simplicidad:
+
+```text
 .
-├── index.html        ← toda la página (estilos y script incluidos)
-├── assets/foto.jpg   ← foto de perfil
-├── .nojekyll         ← le dice a GitHub Pages que sirva los archivos tal cual
-└── README.md
-```
-
-## Publicarlo en GitHub Pages
-
-### Opción A — URL principal (recomendada): `https://CristianGonzalez23.github.io`
-
-1. En GitHub crea un repositorio **público** llamado exactamente `CristianGonzalez23.github.io`.
-2. Desde esta carpeta:
-
-   ```bash
-   git init
-   git add .
-   git commit -m "Landing personal"
-   git branch -M main
-   git remote add origin https://github.com/CristianGonzalez23/CristianGonzalez23.github.io.git
-   git push -u origin main
-   ```
-
-3. Ve a **Settings → Pages**, en *Source* elige **Deploy from a branch**, rama `main`, carpeta `/ (root)` y guarda.
-4. En 1–2 minutos la página estará en `https://CristianGonzalez23.github.io`.
-
-### Opción B — Como proyecto: `https://CristianGonzalez23.github.io/portafolio`
-
-Igual que la opción A, pero el repositorio puede llamarse como quieras (por ejemplo `portafolio`) y la URL incluye ese nombre.
-
-## Verlo en local
-
-Abre `index.html` en el navegador, o levanta un servidor:
-
-```bash
-python3 -m http.server 8000   # luego abre http://localhost:8000
-```
-
-## Personalizar
-
-- **Textos:** todo está en `index.html`, organizado por secciones (`#sobre-mi`, `#experiencia`, `#formacion`, `#habilidades`, `#contacto`).
-- **Colores:** variables `--brand` y `--brand-2` al inicio del `<style>` (hay una paleta clara y otra oscura automática).
-- **Foto:** reemplaza `assets/foto.jpg` (idealmente cuadrada, mínimo 400×400 px).
-- **CV descargable (opcional):** copia tu PDF a `assets/cv.pdf` y agrega en la sección de botones:
-  `<a class="btn" href="assets/cv.pdf" download>Descargar CV</a>`
-- **Dominio propio (opcional):** en *Settings → Pages → Custom domain* escribe tu dominio y configura el DNS según indique GitHub.
+├── index.html       # Estructura principal, contenido y estilos del sitio
+├── assets/
+│   └── foto.jpg     # Recursos gráficos e imágenes (como mi foto de perfil)
+├── .nojekyll        # Configuración para que GitHub Pages sirva el sitio nativamente
+└── README.md        # Documentación del proyecto
